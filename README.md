@@ -13,6 +13,15 @@ The backend provides a REST API implemented in Python 3.11 using the FastAPI and
 The frontend is implemented using [Next.js 15](https://nextjs.org/) and the app router. It serves an UI for chatting with the RAG Backend and managing documents
 
 ## Used Technology
+- Backend using Python 3.11
+  - FastAPI
+  - Langchain
+  - Ollama
+- Frontend using Next.js 15
+  - React
+  - Tailwind CSS
+- Infrastructure using Docker
+  - Qdrant
 
 ## Project Setup
 
