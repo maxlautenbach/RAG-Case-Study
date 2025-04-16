@@ -1,0 +1,105 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1744354829215
+  modified: 1744354829215
+collection:
+  - name: Case Study
+    meta:
+      id: fld_bb1a1685e7414f109337966c540dcb04
+      created: 1744355133602
+      modified: 1744797024771
+      sortKey: -1744355133602
+    children:
+      - url: localhost:8000/upload
+        name: Upload File to RAG
+        meta:
+          id: req_3d0b2ee4dc724689bde80720bf8dd00a
+          created: 1744355136124
+          modified: 1744358469992
+          isPrivate: false
+          sortKey: -1744355136124
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - id: pair_38050b064b73469287b472e2a6a95109
+              name: files
+              disabled: false
+              type: file
+              fileName: /Users/maxlautenbach/Documents/GitHub/RAG-Case-Study/data/bk_reden/rede-von-bundeskanzler-scholz-beim-deutsch-brasilianischen-wirtschaftsforum-am-4-dezember-2023-in-berlin-2247268.json
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:8000/rag
+        name: Get RAG Response
+        meta:
+          id: req_e8e0b1b9c4f64b84b9071049b06973bf
+          created: 1744358280656
+          modified: 1744359110536
+          isPrivate: false
+          sortKey: -1744355136224
+        method: POST
+        body:
+          mimeType: application/json
+          text: >-
+            {
+            	"user_query": "Will Olaf Scholz die Wirtschaftliche Zusammenarbeit mit Brasilien stärken?"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:8000/clear
+        name: Clear Vector Store and Uploads
+        meta:
+          id: req_a866bc45e52e4805b5fd6b9d6fff5ca3
+          created: 1744358320275
+          modified: 1744358433823
+          isPrivate: false
+          sortKey: -1744355136324
+        method: POST
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1744355123140
+    modified: 1744355123140
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1744355123097
+    modified: 1744355123097
+    isPrivate: false

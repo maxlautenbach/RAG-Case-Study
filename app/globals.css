@@ -1,9 +1,0 @@
-@import "tailwindcss";
-
-@plugin 'tailwind-scrollbar';
-
-@theme {
-  --font-sans: "Manrope", sans-serif;
-  --color-grey-900: #1c1c1c;
-  --color-grey-800: #1f1f1f;
-}
