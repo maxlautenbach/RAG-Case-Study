@@ -47,7 +47,7 @@ QDRANT_URL=
 ```
 
 4. Start the FastAPI server by executing the `/backend/main.py` using your virtual environment.
-5. Start the frontend by using `npm run build && npm run start`
+5. Start the frontend by using `npm run build && npm run start` in the frontend folder.
 
 ## Prepared Questions
 
