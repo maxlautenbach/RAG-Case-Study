@@ -33,7 +33,7 @@ The frontend is implemented using [Next.js 15](https://nextjs.org/) and the app 
 
 ### Setup Steps
 
-1. Run `docker-compose up` to start the Qdrant vector store
+1. Run `docker compose up -d` to start the Qdrant vector store
 2. [Create a virtual python environment](https://docs.python.org/3/library/venv.html), activate it and run `pip install -r ./backend/requirements.txt` to install all required packages for the backend.
 3. Run `cd frontend && npm install` to install all required packages for the frontend.
 4. Configure a `.env` file in the backend folder including
@@ -46,7 +46,7 @@ API_KEY=<API Key of OpenAI Compatible Endpoint>
 QDRANT_URL=
 ```
 
-4. Start the FastAPI server by executing the `/backend/main.py` using your virtual environment.
+4. Start the FastAPI server by executing the `./backend/main.py` using your virtual environment.
 5. Start the frontend by using `npm run build && npm run start` in the frontend folder.
 
 ## Prepared Questions
