@@ -11,3 +11,9 @@ python-dotenv==1.1.0
 qdrant_client==1.13.3
 tqdm==4.67.1
 uvicorn==0.34.1
+python-multipart==0.0.20
+pypdf==5.4.0
+unstructured==0.17.2
+docx2txt==0.9
+jq==1.8.0
+markdown==3.8

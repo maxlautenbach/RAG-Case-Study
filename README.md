@@ -47,8 +47,8 @@ API_KEY=<API Key of OpenAI Compatible Endpoint>
 QDRANT_URL=<URL of the Vector DB>
 ```
 
-4. Start the FastAPI server by executing `python ./backend/main.py` using your virtual environment.
-5. Start the frontend by using `cd ./frontend && npm run build && npm run start` in the frontend folder.
+4. Go back to the root folder and start the FastAPI server by executing `python ./backend/main.py` using your virtual environment.
+5. Start the frontend by using `cd ./frontend && npm run build && npm run start`.
 6. Open `localhost:3000` to access the UI.
 7. Click on `Clear Vector DB` to initialize the Vector DB.
 
@@ -56,7 +56,7 @@ QDRANT_URL=<URL of the Vector DB>
 
 In order to test the RAG-Chain with a small subset of documents and questions, you can upload the five files included in the data folder via the UI. Afterwards you can test the chatbot using the following questions:
 
-- Welche Personen spricht Olaf Scholz in seiner Rede zum 125-jährigen DFB Jubiläum direkt an?
+- Welche Personen spricht Olaf Scholz in seinem Grußwort zum 125-jährigen DFB Jubiläum direkt an?
 - Was ist der Titel des neuen Koalitionsvertrags?
 - Wie soll ein elektronischer Impfpass ausgestaltet werden?
 - Wie viele Bundesländer hat Deutschland?
