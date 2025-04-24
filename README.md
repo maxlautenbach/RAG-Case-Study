@@ -13,6 +13,7 @@ The backend provides a REST API implemented in Python 3.11 using the FastAPI and
 The frontend is implemented using [Next.js 15](https://nextjs.org/) and the app router. It serves an UI for chatting with the RAG Backend and managing documents
 
 ## Used Technology
+
 - Backend using Python 3.11
   - FastAPI
   - Langchain
@@ -39,22 +40,24 @@ The frontend is implemented using [Next.js 15](https://nextjs.org/) and the app 
 4. Configure a `.env` file in the backend folder including
 
 ```
-EMBEDDING_MODEL_ID=
-LLM_MODEL_ID=
+EMBEDDING_MODEL_ID=<ID of the Embedding, which should be used>
+LLM_MODEL_ID=<ID of the LLM, which should be used>
 BASE_URL=<Base URL of OpenAI Compatible Endpoint>
 API_KEY=<API Key of OpenAI Compatible Endpoint>
-QDRANT_URL=
+QDRANT_URL=<URL of the Vector DB>
 ```
 
-4. Start the FastAPI server by executing the `./backend/main.py` using your virtual environment.
-5. Start the frontend by using `npm run build && npm run start` in the frontend folder.
+4. Start the FastAPI server by executing `python ./backend/main.py` using your virtual environment.
+5. Start the frontend by using `cd ./frontend && npm run build && npm run start` in the frontend folder.
+6. Open `localhost:3000` to access the UI.
+7. Click on `Clear Vector DB` to initialize the Vector DB.
 
 ## Prepared Questions
 
 In order to test the RAG-Chain with a small subset of documents and questions, you can upload the five files included in the data folder via the UI. Afterwards you can test the chatbot using the following questions:
 
-- Wie soll ein elektronischer Impfpass ausgestaltet werden?
-- Was ist der Titel des neuen Koalitionsvertrags?
 - Welche Personen spricht Olaf Scholz in seiner Rede zum 125-jährigen DFB Jubiläum direkt an?
-- Wer gehört dem Bundeskabinett aktuell noch an?
+- Was ist der Titel des neuen Koalitionsvertrags?
+- Wie soll ein elektronischer Impfpass ausgestaltet werden?
 - Wie viele Bundesländer hat Deutschland?
+- Wer gehört dem Bundeskabinett aktuell noch an?
